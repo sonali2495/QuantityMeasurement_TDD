@@ -32,15 +32,15 @@ public class MeasurementTest {
 	@Test
 	public void given0Inchand0Inch_shouldReturnNotEqual() {
 		Inch inch1 = new Inch(0.0);
-		Inch inch2 = new Inch(0.0);
+		Inch inch2 = new Inch(1.0);
 		Assertions.assertNotEquals(inch1, inch2, "Assert Not Equal test failed!");
 	}
 	
 	@Test
 	public void given0Yardand0Yard_shouldReturnEqual() {
 		Yard yard1 = new Yard(0.0);
-		Yard yard2 = new Yard(0.0);
-		Assertions.assertEquals(yard1, yard2);
+		Yard yard2 = new Yard(1.0);
+		Assertions.assertEquals(yard1, yard2, "Assert Equal test failed!");
 	}
 	
 	@Test
