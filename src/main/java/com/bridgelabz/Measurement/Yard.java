@@ -1,14 +1,14 @@
 package com.bridgelabz.measurement;
 
-public class Feet {
+public class Yard {
 	public double value;
 	
-	public Feet(double value) {
+	public Yard(double value) {
 		this.value = value;
 	}
 
 	/**
-	 * Purpose : Compare the Lengths in feet
+	 * Purpose : Compare the Lengths in Yard
 	 * * @param that : Taking Lengths
      * @return : if Matches then returning Values
 	 */
@@ -20,7 +20,7 @@ public class Feet {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Feet feet = (Feet) obj;
-		return Double.compare(feet.value, value) == 0;
+		Yard yard = (Yard) obj;
+		return Double.doubleToLongBits(value) == Double.doubleToLongBits(yard.value);
 	}
 }

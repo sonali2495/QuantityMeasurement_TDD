@@ -1,14 +1,14 @@
 package com.bridgelabz.measurement;
 
-public class Feet {
-	public double value;
+public class Inch {
+	public  double value;
 	
-	public Feet(double value) {
+	public Inch(double value) {
 		this.value = value;
 	}
 
 	/**
-	 * Purpose : Compare the Lengths in feet
+	 * Purpose : Compare the Lengths in Inch
 	 * * @param that : Taking Lengths
      * @return : if Matches then returning Values
 	 */
@@ -20,7 +20,7 @@ public class Feet {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Feet feet = (Feet) obj;
-		return Double.compare(feet.value, value) == 0;
+		Inch inch = (Inch) obj;
+		return Double.compare(inch.value, value) == 0;	
 	}
 }
