@@ -46,7 +46,7 @@ public class MeasurementTest {
 	@Test
 	public void given0Yardand0Yard_shouldReturnNotEqual() {
 		Yard yard1 = new Yard(0.0);
-		Yard yard2 = new Yard(0.0);
+		Yard yard2 = new Yard(1.0);
 		Assertions.assertNotEquals(yard1, yard2, "Assert Not Equal test failed!");
 	}
 }
