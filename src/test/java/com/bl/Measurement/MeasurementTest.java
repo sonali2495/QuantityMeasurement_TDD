@@ -11,15 +11,15 @@ public class MeasurementTest {
 	@Test
 	public void given0Feetand0Feet_shouldReturnEqual() {
 		Feet feet1 = new Feet(0.0);
-		Feet feet2 = new Feet(1.0);
+		Feet feet2 = new Feet(0.0);
 		Assertions.assertEquals(feet1, feet2, "Assert Equal test failed! ");
 	}
 	
 	@Test
 	public void given0Feetand0Feet_shouldReturnNotEqual() {
 		Feet feet1 = new Feet(0.0);
-		Feet feet2 = new Feet(1.0);
-		Assertions.assertNotEquals(feet1, feet2);
+		Feet feet2 = new Feet(0.0);
+		Assertions.assertNotEquals(feet1, feet2, "Assert Not Equal test failed! ");
 	}
 	
 	@Test
